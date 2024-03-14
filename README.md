@@ -16,3 +16,9 @@ Separate pages for blog and consultation form
   - Weekly? Blog for backend practice
 - Consultation Form/ Contact
   - A form to submit an application for a free consultation
+
+# Random Ideas
+
+- Scroll Animation
+- Dark.Light Mode
+-
