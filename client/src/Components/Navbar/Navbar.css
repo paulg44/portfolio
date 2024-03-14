@@ -1,1 +1,32 @@
 /* Custom CSS for Navbar */
+
+.navbar {
+  /* position: fixed; */
+  background-color: aqua;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.linksContainer {
+  display: flex;
+  margin-right: 20px;
+}
+
+.list {
+  display: flex;
+}
+
+.listItem {
+  padding: 0 10px;
+}
+
+.buttonsContainer > button {
+  /* margin: 0 10px; */
+  border: 1px solid red;
+}
