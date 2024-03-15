@@ -21,4 +21,5 @@ Separate pages for blog and consultation form
 
 - Scroll Animation
 - Dark.Light Mode
--
+- Add our work button under about me
+- Add testimonials button "see what these clients thought" under my work

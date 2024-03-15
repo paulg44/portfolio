@@ -13,11 +13,6 @@ function NavbarComponent() {
         </Link>
       </Container>
       <Container className="linksContainer">
-        <ul className="list">
-          <li className="listItem">About</li>
-          <li className="listItem">My Work</li>
-          <li className="listItem">Testimonials</li>
-        </ul>
         <Container className="buttonsContainer">
           <button type="button" className="blogBtn btn">
             Blog
@@ -26,6 +21,9 @@ function NavbarComponent() {
             Free Consultation
           </button>
         </Container>
+        <ul className="list">
+          <li className="listItem">Contact</li>
+        </ul>
       </Container>
     </Navbar>
   );
