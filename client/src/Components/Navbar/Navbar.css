@@ -1,8 +1,7 @@
 /* Custom CSS for Navbar */
 
 .navbar {
-  /* position: fixed; */
-  background-color: aqua;
+  background-color: transparent;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -15,6 +14,7 @@
 
 .linksContainer {
   display: flex;
+  align-items: center;
   margin-right: 20px;
 }
 
@@ -24,9 +24,11 @@
 
 .listItem {
   padding: 0 10px;
+  color: var(--primary-light-color);
 }
 
 .buttonsContainer > button {
-  /* margin: 0 10px; */
-  border: 1px solid red;
+  margin: 0 10px;
+  padding: 5px 20px;
+  background-color: var(--accent-beige);
 }

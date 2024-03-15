@@ -11,9 +11,16 @@
 
 .header h1 {
   font-size: 60px;
+  color: var(--accent-beige);
+  border-bottom: 3px solid var(--accent-purple);
+  width: 120%;
+  margin-bottom: 20px;
 }
 
 .hiThere {
   position: absolute;
-  margin-left: 20px;
+}
+
+.myWorkBtn {
+  background-color: var(--accent-purple);
 }

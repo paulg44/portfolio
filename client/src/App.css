@@ -1,5 +1,42 @@
-body {
+:root {
+  --primary-light-color: #e4dfda;
+  --primary-dark-color: #0c0910;
+  --accent-purple: #791e94;
+  --accent-beige: #de6449;
+  --accent-blue: #407899;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    var(--primary-light-color) 60%,
+    var(--accent-purple) 40%
+  );
+  color: var(--primary-dark-color);
+}
+
+/* Utilites */
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-dark-color);
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }

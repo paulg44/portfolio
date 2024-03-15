@@ -13,7 +13,9 @@ function AboutHeader() {
           <p>A creative web {}. I enjoy designing and building websites.</p>
         </Container>
       </Container>
-      <button type="button">View my work</button>
+      <button type="button" className="btn myWorkBtn">
+        View my work
+      </button>
     </Container>
   );
 }

@@ -22,7 +22,9 @@ function NavbarComponent() {
           </button>
         </Container>
         <ul className="list">
-          <li className="listItem">Contact</li>
+          <li className="listItem">
+            <Link to={"/footer"}>Contact</Link>
+          </li>
         </ul>
       </Container>
     </Navbar>
