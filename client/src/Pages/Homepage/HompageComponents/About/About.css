@@ -6,11 +6,11 @@
   justify-content: space-evenly;
   flex-direction: column;
   height: 90vh;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .header h1 {
-  font-size: 60px;
+  font-size: 100px;
   color: var(--accent-beige);
   border-bottom: 3px solid var(--accent-purple);
   width: 120%;

@@ -13,11 +13,7 @@
 }
 
 body {
-  background: linear-gradient(
-    135deg,
-    var(--primary-light-color) 60%,
-    var(--accent-purple) 40%
-  );
+  background-color: var(--primary-light-color);
   color: var(--primary-dark-color);
 }
 
