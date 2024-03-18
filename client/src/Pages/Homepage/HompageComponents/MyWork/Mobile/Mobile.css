@@ -1,0 +1,7 @@
+/* CSS file for Mobile */
+
+.outerMobile {
+  width: 280px;
+  height: 65vh;
+  border: 2px solid black;
+}

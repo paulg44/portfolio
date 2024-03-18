@@ -1,11 +1,14 @@
 // MyWork Component
 import "./MyWork.css";
+import { Container } from "react-bootstrap";
+import Mobile from "./Mobile/Mobile";
 
 function MyWork() {
   return (
-    <div>
-      <h2>My Work</h2>
-    </div>
+    <Container className="myWork">
+      <Container className="projects"></Container>
+      <Mobile />
+    </Container>
   );
 }
 
