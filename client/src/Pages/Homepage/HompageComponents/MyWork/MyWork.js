@@ -8,19 +8,6 @@ import { FaBeer, FaBrush } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 function MyWork() {
-  const [activeProject, setActiveProject] = useState(null);
-
-  function handleProjectChoice(projectName) {
-    const selectedProject = projectObj.find(
-      (project) => project.projectName === projectName
-    );
-    setActiveProject(selectedProject);
-  }
-
-  useEffect(() => {
-    console.log(activeProject, "is the active project");
-  }, [activeProject]);
-
   const projectObj = [
     {
       id: 1,
@@ -42,10 +29,21 @@ function MyWork() {
     },
   ];
 
+  const [activeProject, setActiveProject] = useState("");
+
+  function handleProjectChoice(icon) {
+    const selectedProject = projectObj.find((project) => project.icon === icon);
+    setActiveProject(selectedProject);
+  }
+
+  useEffect(() => {
+    console.log(activeProject, "is the active project");
+  }, [activeProject]);
+
   return (
     <Container className="myWork">
       <Container className="projects">
-        <h3>{projectObj.title}</h3>
+        <h3>{activeProject.title}</h3>
       </Container>
       <Mobile
         handleProjectChoice={handleProjectChoice}
