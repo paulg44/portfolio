@@ -4,8 +4,9 @@ import { Container } from "react-bootstrap";
 import Mobile from "./Mobile/Mobile";
 import ssjIMG from "../../../../IMG/ssj_homepage.jpg";
 import amhIMG from "../../../../IMG/hifi_1.jpg";
-import { FaBeer, FaBrush } from "react-icons/fa";
+import { FaBeer, FaBrush, FaGitSquare, FaGoogle } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function MyWork() {
   const projectObj = [
@@ -13,6 +14,7 @@ function MyWork() {
       id: 1,
       title: "Shardlow St James",
       img: ssjIMG,
+      imgAlt: "project image",
       description: "ssj",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
@@ -22,6 +24,7 @@ function MyWork() {
       id: 2,
       title: "AMH Decorating",
       img: amhIMG,
+      imgAlt: "project image",
       description: "AMH",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
@@ -44,6 +47,18 @@ function MyWork() {
     <Container className="myWork">
       <Container className="projects">
         <h3>{activeProject.title}</h3>
+        <img
+          style={{ width: "80%" }}
+          src={activeProject.img}
+          alt={activeProject.imgAlt}
+        ></img>
+        <p>{activeProject.description}</p>
+        <a href={activeProject.githubLink} target="_blank" rel="noreferrer">
+          <FaGitSquare />
+        </a>
+        <a href={activeProject.webLink} target="_blank" rel="noreferrer">
+          <FaGoogle />
+        </a>
       </Container>
       <Mobile
         handleProjectChoice={handleProjectChoice}
