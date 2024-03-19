@@ -8,12 +8,13 @@ function Mobile({ handleProjectChoice, projectObj }) {
       <div className="outerMobile">
         <div className="mobileBtns">
           <div className="volumeBtn"></div>
+          {/* Make the power button work */}
           <div className="powerBtn"></div>
         </div>
         <div className="camera"></div>
         <div className="innerMobile">
           <div className="links">
-            <p>Links</p>
+            <h4>Projects</h4>
             <ul>
               {projectObj.map((project, index) => (
                 <li key={index}>
@@ -24,6 +25,7 @@ function Mobile({ handleProjectChoice, projectObj }) {
               ))}
             </ul>
           </div>
+          <div className="bottomBar"></div>
         </div>
       </div>
     </Container>

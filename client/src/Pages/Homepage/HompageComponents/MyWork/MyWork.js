@@ -3,8 +3,10 @@ import "./MyWork.css";
 import { Container } from "react-bootstrap";
 import Mobile from "./Mobile/Mobile";
 import ssjIMG from "../../../../IMG/ssj_homepage.jpg";
+import runLogIMG from "../../../../IMG/running_log_table.jpg";
 import amhIMG from "../../../../IMG/hifi_1.jpg";
-import { FaBeer, FaBrush, FaGitSquare, FaGoogle } from "react-icons/fa";
+import javaIMG from "../../../../IMG/saw-img.jpg";
+import { FaGitSquare, FaGoogle } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 function MyWork() {
@@ -17,7 +19,7 @@ function MyWork() {
       description: "ssj",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      icon: <FaBeer />,
+      icon: "SSJ",
     },
     {
       id: 2,
@@ -27,7 +29,47 @@ function MyWork() {
       description: "AMH",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      icon: <FaBrush />,
+      icon: "AMH",
+    },
+    {
+      id: 3,
+      title: "Lacey & Ball",
+      img: amhIMG,
+      imgAlt: "project image",
+      description: "L & B",
+      githubLink: "https://github.com/paulg44/shardlow_st_james",
+      webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
+      icon: "L & B",
+    },
+    {
+      id: 4,
+      title: "LG Guitars",
+      img: amhIMG,
+      imgAlt: "project image",
+      description: "LG",
+      githubLink: "https://github.com/paulg44/shardlow_st_james",
+      webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
+      icon: "LG",
+    },
+    {
+      id: 5,
+      title: "Running Logs",
+      img: runLogIMG,
+      imgAlt: "project image",
+      description: "Running logs",
+      githubLink: "https://github.com/paulg44/shardlow_st_james",
+      webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
+      icon: "RL",
+    },
+    {
+      id: 6,
+      title: "JavaScript Projects",
+      img: javaIMG,
+      imgAlt: "project image",
+      description: "Javascript",
+      githubLink: "https://github.com/paulg44/shardlow_st_james",
+      webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
+      icon: "JS",
     },
   ];
 
