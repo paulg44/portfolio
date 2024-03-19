@@ -20,6 +20,7 @@ function MyWork() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       icon: "SSJ",
+      backgroundIMG: ssjIMG,
     },
     {
       id: 2,
@@ -30,6 +31,8 @@ function MyWork() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       icon: "AMH",
+
+      backgroundIMG: ssjIMG,
     },
     {
       id: 3,
@@ -40,6 +43,7 @@ function MyWork() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       icon: "L & B",
+      backgroundIMG: ssjIMG,
     },
     {
       id: 4,
@@ -50,6 +54,7 @@ function MyWork() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       icon: "LG",
+      backgroundIMG: ssjIMG,
     },
     {
       id: 5,
@@ -60,6 +65,7 @@ function MyWork() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       icon: "RL",
+      backgroundIMG: ssjIMG,
     },
     {
       id: 6,
@@ -70,6 +76,7 @@ function MyWork() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       icon: "JS",
+      backgroundIMG: ssjIMG,
     },
   ];
 
