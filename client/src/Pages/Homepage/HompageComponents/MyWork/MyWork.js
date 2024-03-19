@@ -6,7 +6,6 @@ import ssjIMG from "../../../../IMG/ssj_homepage.jpg";
 import amhIMG from "../../../../IMG/hifi_1.jpg";
 import { FaBeer, FaBrush, FaGitSquare, FaGoogle } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 function MyWork() {
   const projectObj = [
@@ -53,6 +52,7 @@ function MyWork() {
           alt={activeProject.imgAlt}
         ></img>
         <p>{activeProject.description}</p>
+        {/* Only show when active project is selected */}
         <a href={activeProject.githubLink} target="_blank" rel="noreferrer">
           <FaGitSquare />
         </a>

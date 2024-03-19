@@ -1,7 +1,55 @@
 /* CSS file for Mobile */
 
 .outerMobile {
+  position: relative;
   width: 280px;
-  height: 65vh;
-  border: 2px solid black;
+  height: 510px;
+  border: 1px solid var(--primary-dark-color);
+  border-radius: 22px;
+  background-color: grey;
+}
+
+.camera {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.mobileBtns {
+  position: absolute;
+  top: 50px;
+  right: -3px;
+}
+
+.volumeBtn {
+  width: 3px;
+  height: 25px;
+  background-color: black;
+  margin-bottom: 5px;
+  border-radius: 0 5px 5px 0;
+}
+
+.powerBtn {
+  width: 3px;
+  height: 15px;
+  background-color: black;
+  border-radius: 0 5px 5px 0;
+}
+
+.innerMobile {
+  width: 270px;
+  height: 500px;
+  border: 3px solid var(--primary-dark-color);
+  border-radius: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: url(../../../../../IMG/profile_test_2.jpg) no-repeat center
+    center/cover;
 }

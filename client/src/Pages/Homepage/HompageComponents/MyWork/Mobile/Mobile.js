@@ -6,6 +6,11 @@ function Mobile({ handleProjectChoice, projectObj }) {
   return (
     <Container className="mobile">
       <div className="outerMobile">
+        <div className="mobileBtns">
+          <div className="volumeBtn"></div>
+          <div className="powerBtn"></div>
+        </div>
+        <div className="camera"></div>
         <div className="innerMobile">
           <div className="links">
             <p>Links</p>
