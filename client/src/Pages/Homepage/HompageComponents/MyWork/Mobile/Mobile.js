@@ -19,7 +19,7 @@ function Mobile({ handleProjectChoice, projectObj }) {
               {projectObj.map((project, index) => (
                 <li key={index}>
                   <button
-                    onClick={() => handleProjectChoice(project.icon)}
+                    onClick={() => handleProjectChoice(project.title)}
                     style={{
                       backgroundImage: `url(${project.backgroundIMG})`,
                       backgroundSize: "cover",

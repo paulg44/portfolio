@@ -6,6 +6,9 @@ import ssjIMG from "../../../../IMG/ssj_homepage.jpg";
 import runLogIMG from "../../../../IMG/running_log_table.jpg";
 import amhIMG from "../../../../IMG/hifi_1.jpg";
 import javaIMG from "../../../../IMG/saw-img.jpg";
+import ssjLogo from "../../../../IMG/ssj_logo_test_2.jpg";
+import amhLogo from "../../../../IMG/amh_logo.jpg";
+import lgLogo from "../../../../IMG/logo.png";
 import { FaGitSquare, FaGoogle } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
@@ -19,8 +22,8 @@ function MyWork() {
       description: "ssj",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      icon: "SSJ",
-      backgroundIMG: ssjIMG,
+      // icon: "SSJ",
+      backgroundIMG: ssjLogo,
     },
     {
       id: 2,
@@ -30,9 +33,8 @@ function MyWork() {
       description: "AMH",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      icon: "AMH",
-
-      backgroundIMG: ssjIMG,
+      // icon: "AMH",
+      backgroundIMG: amhLogo,
     },
     {
       id: 3,
@@ -54,7 +56,7 @@ function MyWork() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       icon: "LG",
-      backgroundIMG: ssjIMG,
+      backgroundIMG: lgLogo,
     },
     {
       id: 5,
@@ -82,8 +84,10 @@ function MyWork() {
 
   const [activeProject, setActiveProject] = useState("");
 
-  function handleProjectChoice(icon) {
-    const selectedProject = projectObj.find((project) => project.icon === icon);
+  function handleProjectChoice(title) {
+    const selectedProject = projectObj.find(
+      (project) => project.title === title
+    );
     setActiveProject(selectedProject);
   }
 
