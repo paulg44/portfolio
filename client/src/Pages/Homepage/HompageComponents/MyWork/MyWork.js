@@ -97,21 +97,27 @@ function MyWork() {
 
   return (
     <Container className="myWork">
-      <Container className="projects">
-        <h3>{activeProject.title}</h3>
-        <img
-          style={{ width: "80%" }}
-          src={activeProject.img}
-          alt={activeProject.imgAlt}
-        ></img>
+      <Container>
+        <Container className="outerIpad">
+          <Container className="innerIpad">
+            <h3>{activeProject.title}</h3>
+            <img src={activeProject.img} alt={activeProject.imgAlt}></img>
+            {/* Only show when active project is selected */}
+            <div className="ipadLinks">
+              <a
+                href={activeProject.githubLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGitSquare />
+              </a>
+              <a href={activeProject.webLink} target="_blank" rel="noreferrer">
+                <FaGoogle />
+              </a>
+            </div>
+          </Container>
+        </Container>
         <p>{activeProject.description}</p>
-        {/* Only show when active project is selected */}
-        <a href={activeProject.githubLink} target="_blank" rel="noreferrer">
-          <FaGitSquare />
-        </a>
-        <a href={activeProject.webLink} target="_blank" rel="noreferrer">
-          <FaGoogle />
-        </a>
       </Container>
       <Mobile
         handleProjectChoice={handleProjectChoice}
