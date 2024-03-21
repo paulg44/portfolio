@@ -55,7 +55,7 @@ function MyWork() {
       description: "LG",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      icon: "LG",
+      // icon: "LG",
       backgroundIMG: lgLogo,
     },
     {

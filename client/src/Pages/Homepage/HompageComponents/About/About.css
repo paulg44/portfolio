@@ -9,22 +9,68 @@
   margin-left: 15%;
 }
 
+/* Main h1 */
 .header h1 {
   font-size: 100px;
   color: var(--accent-beige);
-  border-bottom: 3px solid var(--accent-purple);
+  /* border-bottom: 3px solid var(--accent-purple); */
   width: 120%;
   margin-bottom: 20px;
+  font-family: "DM Mono", monospace;
 }
 
 .hiThere {
   position: absolute;
 }
 
-h1 {
-  font-family: "DM Mono", monospace;
+.paul {
+  color: var(--accent-purple);
+}
+
+/* Text scroll  */
+.firstParagraph {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.textScroll {
+  border: 2px solid var(--accent-beige);
+  margin: 0 5px;
+  padding: 10px 0;
+  width: 400px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.textScrollText {
+  animation: bounce-in-right 3s ease infinite;
+}
+
+.secondParagraph {
+  text-align: center;
 }
 
 .myWorkBtn {
   background-color: var(--accent-purple);
+}
+
+/* Animations  */
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
