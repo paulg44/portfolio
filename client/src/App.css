@@ -15,6 +15,7 @@
 body {
   background-color: var(--primary-light-color);
   color: var(--primary-dark-color);
+  font-family: "Oxygen Mono", monospace;
 }
 
 /* Utilites */
@@ -35,4 +36,5 @@ a {
   background-color: #000;
   color: #fff;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Oxygen Mono", monospace;
 }

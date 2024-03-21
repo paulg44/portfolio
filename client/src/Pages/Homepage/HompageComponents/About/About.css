@@ -21,6 +21,10 @@
   position: absolute;
 }
 
+h1 {
+  font-family: "DM Mono", monospace;
+}
+
 .myWorkBtn {
   background-color: var(--accent-purple);
 }
