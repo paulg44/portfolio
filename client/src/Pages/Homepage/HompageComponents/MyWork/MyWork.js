@@ -19,7 +19,8 @@ function MyWork() {
       title: "Shardlow St James",
       img: ssjIMG,
       imgAlt: "project image",
-      description: "ssj",
+      description:
+        "A project I have taken on for my local amateur football club. I have used React for the tech stack as it is scalable and the reusable components are perfect as the club has three teams. I have also integrated some real time data from the FA website and is fully tested using Cypress. Currently building a back end with node, express and PostgreSQL",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       // icon: "SSJ",
@@ -97,27 +98,25 @@ function MyWork() {
 
   return (
     <Container className="myWork">
-      <Container>
+      <Container className="projectsDisplay">
+        <h3>{activeProject.title}</h3>
         <Container className="outerIpad">
           <Container className="innerIpad">
-            <h3>{activeProject.title}</h3>
             <img src={activeProject.img} alt={activeProject.imgAlt}></img>
             {/* Only show when active project is selected */}
-            <div className="ipadLinks">
-              <a
-                href={activeProject.githubLink}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGitSquare />
-              </a>
-              <a href={activeProject.webLink} target="_blank" rel="noreferrer">
-                <FaGoogle />
-              </a>
-            </div>
           </Container>
         </Container>
-        <p>{activeProject.description}</p>
+        <p style={{ textAlign: "center", margin: "10px" }}>
+          {activeProject.description}
+        </p>
+        <div className="ipadLinks">
+          <a href={activeProject.githubLink} target="_blank" rel="noreferrer">
+            <FaGitSquare />
+          </a>
+          <a href={activeProject.webLink} target="_blank" rel="noreferrer">
+            <FaGoogle />
+          </a>
+        </div>
       </Container>
       <Mobile
         handleProjectChoice={handleProjectChoice}
