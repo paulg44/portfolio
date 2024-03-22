@@ -9,7 +9,7 @@ function NavbarComponent() {
     <Navbar className="navbar">
       <Container className="logoContainer">
         <Link to={"/"} className="logo">
-          Logo
+          {`< PG />`}
         </Link>
       </Container>
       <Container className="linksContainer">
