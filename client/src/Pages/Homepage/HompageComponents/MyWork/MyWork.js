@@ -3,12 +3,17 @@ import "./MyWork.css";
 import { Container } from "react-bootstrap";
 import Mobile from "./Mobile/Mobile";
 import ssjIMG from "../../../../IMG/ssj_homepage.jpg";
-import runLogIMG from "../../../../IMG/running_log_table.jpg";
-import amhIMG from "../../../../IMG/hifi_1.jpg";
-import javaIMG from "../../../../IMG/saw-img.jpg";
 import ssjLogo from "../../../../IMG/ssj_logo_test_2.jpg";
+import amhIMG from "../../../../IMG/amh_main.jpg";
 import amhLogo from "../../../../IMG/amh_logo.jpg";
-import lgLogo from "../../../../IMG/logo.png";
+import runLogIMG from "../../../../IMG/running_log_table.jpg";
+import javaIMG from "../../../../IMG/saw-img.jpg";
+import javaLogo from "../../../../IMG/saw_win.jpg";
+import lbLogo from "../../../../IMG/L&B_plain_background.jpg";
+import lgIMG from "../../../../IMG/lg_guitars_main.jpg";
+import lgLogo from "../../../../IMG/lg_logo_2.PNG";
+import consensusIMG from "../../../../IMG/consensus_main.jpg";
+import consensusLogo from "../../../../IMG/logo_test_2.jpg";
 import { FaGitSquare, FaGoogle } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
@@ -39,19 +44,19 @@ function MyWork() {
     },
     {
       id: 3,
-      title: "Lacey & Ball",
-      img: amhIMG,
+      title: "Consensus",
+      img: consensusIMG,
       imgAlt: "project image",
-      description: "L & B",
+      description: "Consensus",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      icon: "L & B",
-      backgroundIMG: ssjIMG,
+      // icon: "L & B",
+      backgroundIMG: consensusLogo,
     },
     {
       id: 4,
       title: "LG Guitars",
-      img: amhIMG,
+      img: lgIMG,
       imgAlt: "project image",
       description: "LG",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
@@ -68,7 +73,7 @@ function MyWork() {
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
       icon: "RL",
-      backgroundIMG: ssjIMG,
+      backgroundIMG: lbLogo,
     },
     {
       id: 6,
@@ -78,8 +83,8 @@ function MyWork() {
       description: "Javascript",
       githubLink: "https://github.com/paulg44/shardlow_st_james",
       webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      icon: "JS",
-      backgroundIMG: ssjIMG,
+      // icon: "JS",
+      backgroundIMG: javaLogo,
     },
   ];
 
@@ -106,9 +111,7 @@ function MyWork() {
             {/* Only show when active project is selected */}
           </Container>
         </Container>
-        <p style={{ textAlign: "center", margin: "10px" }}>
-          {activeProject.description}
-        </p>
+        <p className="projectDesc">{activeProject.description}</p>
         <div className="ipadLinks">
           <a href={activeProject.githubLink} target="_blank" rel="noreferrer">
             <FaGitSquare />
