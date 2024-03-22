@@ -21,6 +21,7 @@ function Mobile({ handleProjectChoice, projectObj }) {
                   <button
                     onClick={() => handleProjectChoice(project.title)}
                     style={{
+                      color: "white",
                       backgroundImage: `url(${project.backgroundIMG})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
