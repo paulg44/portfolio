@@ -1,0 +1,16 @@
+/* CSS file for Testimonials Component */
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonialPersons {
+  margin: 0 20px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
