@@ -2,20 +2,19 @@
 
 .aboutHeader {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  height: 90vh;
-  margin-left: 15%;
+  height: 100%;
 }
 
 /* Main h1 */
 .header h1 {
-  font-size: 100px;
+  font-size: 60px;
   color: var(--accent-beige);
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
   width: 120%;
-  margin-bottom: 20px;
+  margin: 10px 0;
   font-family: "DM Mono", monospace;
 }
 

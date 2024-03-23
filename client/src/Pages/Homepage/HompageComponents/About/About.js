@@ -43,9 +43,6 @@ function AboutHeader() {
           </p>
         </Container>
       </Container>
-      <button type="button" className="btn myWorkBtn">
-        View my work
-      </button>
     </Container>
   );
 }

@@ -16,6 +16,7 @@ import consensusIMG from "../../../../IMG/consensus_main.jpg";
 import consensusLogo from "../../../../IMG/logo_test_2.jpg";
 import { FaGitSquare, FaGoogle } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import AboutHeader from "../About/About";
 
 function MyWork() {
   const projectObj = [
@@ -115,6 +116,7 @@ function MyWork() {
         <h3>{activeProject.title}</h3>
         <Container className="outerIpad">
           <Container className="innerIpad">
+            <AboutHeader />
             <img src={activeProject.img} alt={activeProject.imgAlt}></img>
             {/* Only show when active project is selected */}
           </Container>

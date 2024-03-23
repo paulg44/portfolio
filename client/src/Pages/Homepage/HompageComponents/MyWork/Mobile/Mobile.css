@@ -7,6 +7,7 @@
   border: 1px solid var(--primary-dark-color);
   border-radius: 22px;
   background-color: grey;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.4);
 }
 
 .camera {
