@@ -1,6 +1,7 @@
 // Mobile Component
 import "./Mobile.css";
 import { Container } from "react-bootstrap";
+import { FaCircleNodes } from "react-icons/fa6";
 
 function Mobile({ handleProjectChoice, projectObj }) {
   return (
@@ -19,6 +20,7 @@ function Mobile({ handleProjectChoice, projectObj }) {
               {projectObj.map((project, index) => (
                 <li key={index}>
                   <button
+                    className="linksBtn"
                     onClick={() => handleProjectChoice(project.title)}
                     style={{
                       color: "white",
@@ -32,6 +34,10 @@ function Mobile({ handleProjectChoice, projectObj }) {
                 </li>
               ))}
             </ul>
+            <button type="button" className="testingSearch">
+              <FaCircleNodes />
+              Testing?....
+            </button>
           </div>
           <div className="bottomBar"></div>
         </div>

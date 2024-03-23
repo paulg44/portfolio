@@ -86,6 +86,16 @@ function MyWork() {
       // icon: "JS",
       backgroundIMG: javaLogo,
     },
+    {
+      id: 7,
+      title: "Testing",
+      img: javaIMG,
+      imgAlt: "project image",
+      description: "Javascript",
+      githubLink: "https://github.com/paulg44/shardlow_st_james",
+      webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
+      backgroundIMG: javaLogo,
+    },
   ];
 
   const [activeProject, setActiveProject] = useState("");
