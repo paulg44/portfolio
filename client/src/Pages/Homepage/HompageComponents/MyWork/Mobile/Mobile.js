@@ -4,6 +4,10 @@ import { Container } from "react-bootstrap";
 import { FaCircleNodes } from "react-icons/fa6";
 
 function Mobile({ handleProjectChoice, projectObj }) {
+  const filterTesting = projectObj.filter(
+    (project) => project.title !== "Testing"
+  );
+
   return (
     <Container className="mobile">
       <div className="outerMobile">
@@ -17,7 +21,7 @@ function Mobile({ handleProjectChoice, projectObj }) {
           <div className="links">
             <h4>Projects</h4>
             <ul>
-              {projectObj.map((project, index) => (
+              {filterTesting.map((project, index) => (
                 <li key={index}>
                   <button
                     className="linksBtn"
@@ -34,7 +38,11 @@ function Mobile({ handleProjectChoice, projectObj }) {
                 </li>
               ))}
             </ul>
-            <button type="button" className="testingSearch">
+            <button
+              onClick={() => handleProjectChoice("Testing")}
+              type="button"
+              className="testingSearch"
+            >
               <FaCircleNodes />
               Testing?....
             </button>

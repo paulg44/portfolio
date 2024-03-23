@@ -78,6 +78,10 @@
   text-align: right;
 }
 
+.links h4 {
+  color: var(--primary-light-color);
+}
+
 .links ul {
   display: flex;
   flex-wrap: wrap;

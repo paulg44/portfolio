@@ -91,10 +91,8 @@ function MyWork() {
       title: "Testing",
       img: javaIMG,
       imgAlt: "project image",
-      description: "Javascript",
-      githubLink: "https://github.com/paulg44/shardlow_st_james",
-      webLink: "https://statuesque-basbousa-0726c3.netlify.app/",
-      backgroundIMG: javaLogo,
+      description:
+        "All projects have been tested with unit tests and end 2 end tests. I use React testing library & Cypress for my React projects. Jest & Playwright for vanilla JS projects. I also have GitHub Actions set up on every project as a fail safe.",
     },
   ];
 
