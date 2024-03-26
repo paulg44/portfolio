@@ -18,7 +18,7 @@ import { FaGitSquare, FaGoogle } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import AboutHeader from "../About/About";
 
-function MyWork() {
+function MyWork({ darkMode }) {
   const projectObj = [
     {
       id: 1,
@@ -116,7 +116,7 @@ function MyWork() {
         <h3>{activeProject.title}</h3>
         <Container className="outerIpad">
           <Container className="innerIpad">
-            <AboutHeader />
+            <AboutHeader darkMode={darkMode} />
             <img src={activeProject.img} alt={activeProject.imgAlt}></img>
             {/* Only show when active project is selected */}
           </Container>

@@ -13,9 +13,17 @@
 }
 
 body {
+  font-family: "Oxygen Mono", monospace;
+}
+
+.light {
   background-color: var(--primary-light-color);
   color: var(--primary-dark-color);
-  font-family: "Oxygen Mono", monospace;
+}
+
+.dark {
+  background-color: var(--primary-dark-color);
+  color: var(--primary-light-color);
 }
 
 /* Utilites */

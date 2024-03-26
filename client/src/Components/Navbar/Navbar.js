@@ -3,11 +3,8 @@ import "./Navbar.css";
 import { Container, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FaLightbulb } from "react-icons/fa6";
-import { darkModeTheme, useDarkMode } from "../DarkModeContext/DarkModeContext";
 
-function NavbarComponent() {
-  const {darkMode, toggleDarkMode}
-
+function NavbarComponent({ toggleDarkMode }) {
   return (
     <Navbar className="navbar">
       <Container className="logoContainer">
@@ -17,7 +14,7 @@ function NavbarComponent() {
       </Container>
       <Container className="linksContainer">
         <Container className="buttonsContainer">
-          <button type="button" className="btn">
+          <button onClick={toggleDarkMode} type="button" className="btn">
             <FaLightbulb />
           </button>
           <button type="button" className="blogBtn btn">

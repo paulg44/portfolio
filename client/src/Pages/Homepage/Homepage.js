@@ -6,10 +6,10 @@ import MyWork from "./HompageComponents/MyWork/MyWork";
 
 import Testimonials from "./HompageComponents/Testimonials/Testimonials";
 
-function Homepage() {
+function Homepage({ darkMode }) {
   return (
     <Container>
-      <MyWork />
+      <MyWork darkMode={darkMode} />
       <Testimonials />
     </Container>
   );

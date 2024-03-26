@@ -4,7 +4,7 @@ import "./About.css";
 import { Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
-function AboutHeader() {
+function AboutHeader({ darkMode }) {
   const descriptiveText = [
     "software developer",
     "web developer",
@@ -25,7 +25,7 @@ function AboutHeader() {
   }, [descriptiveText.length]);
 
   return (
-    <Container className="aboutHeader">
+    <Container className={`aboutHeader ${darkMode}`}>
       <Container className="header">
         <p className="hiThere">Hi there,</p>
         <h1>
