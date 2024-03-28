@@ -24,6 +24,10 @@ body {
 .dark {
   background-color: var(--primary-dark-color);
   color: var(--primary-light-color);
+
+  a {
+    color: var(--primary-light-color);
+  }
 }
 
 /* Utilites */
