@@ -30,5 +30,5 @@
 .buttonsContainer > button {
   margin: 0 10px;
   padding: 5px 20px;
-  background-color: var(--accent-beige);
+  /* background-color: var(--accent-beige); */
 }

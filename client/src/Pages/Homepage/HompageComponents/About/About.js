@@ -26,15 +26,15 @@ function AboutHeader({ darkMode }) {
 
   return (
     <Container className={`aboutHeader ${darkMode}`}>
-      <Container className="header">
+      <Container className={`header ${darkMode}`}>
         <p className="hiThere">Hi there,</p>
         <h1>
-          Meet me,<span className="paul">Paul!</span>
+          Meet me,<span className={`paul ${darkMode}`}>Paul!</span>
         </h1>
         <Container className="about">
           <p className="firstParagraph">
             A creative
-            <div className="textScroll">
+            <div className={`textScroll ${darkMode}`}>
               <p className="textScrollText">{descriptiveText[textScroll]}</p>
             </div>
           </p>

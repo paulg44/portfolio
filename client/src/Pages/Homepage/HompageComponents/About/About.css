@@ -18,12 +18,20 @@
   font-family: "DM Mono", monospace;
 }
 
+.dark.header h1 {
+  color: var(--accent-purple);
+}
+
 .hiThere {
   position: absolute;
 }
 
 .paul {
   color: var(--accent-purple);
+}
+
+.dark.paul {
+  color: var(--accent-blue);
 }
 
 /* Text scroll  */
@@ -44,6 +52,12 @@
   font-size: 20px;
   overflow: hidden;
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark.textScroll {
+  background-color: var(--primary-dark-color);
+  color: var(--primary-light-color);
+  border: 2px solid var(--accent-blue);
 }
 
 .textScrollText {
