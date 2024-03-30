@@ -17,12 +17,10 @@ function NavbarComponent({ toggleDarkMode }) {
           <button onClick={toggleDarkMode} type="button" className="btn">
             <FaLightbulb />
           </button>
-          <button type="button" className="blogBtn btn">
-            Blog
-          </button>
-          <button type="button" className="consultationBtn btn">
+          <Link className="blogBtn btn">Blog</Link>
+          <Link to={"/consult"} className="consultationBtn btn">
             Free Consultation
-          </button>
+          </Link>
         </Container>
         <ul className="list">
           <li className="listItem">

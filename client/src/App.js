@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavbarComponent from "./Components/Navbar/Navbar";
 import Homepage from "./Pages/Homepage/Homepage";
+import Consultation from "./Pages/Consultation/Consultation";
 import { useState } from "react";
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
         <NavbarComponent toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/" element={<Homepage darkMode={darkMode} />} />
+          <Route
+            path="/consult"
+            element={<Consultation darkMode={darkMode} />}
+          />
         </Routes>
       </div>
     </BrowserRouter>
