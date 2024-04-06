@@ -14,17 +14,17 @@ function NavbarComponent({ toggleDarkMode }) {
       </Container>
       <Container className="linksContainer">
         <Container className="buttonsContainer">
-          <button onClick={toggleDarkMode} type="button" className="btn">
+          {/* <button onClick={toggleDarkMode} type="button" className="btn">
             <FaLightbulb />
-          </button>
+          </button> */}
           <Link className="blogBtn btn">Blog</Link>
-          <Link to={"/consult"} className="consultationBtn btn">
+          {/* <Link to={"/consult"} className="consultationBtn btn">
             Free Consultation
-          </Link>
+          </Link> */}
         </Container>
         <ul className="list">
           <li className="listItem">
-            <Link to={"/footer"}>Contact</Link>
+            <a href="/footer">Contact</a>
           </li>
         </ul>
       </Container>

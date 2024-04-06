@@ -1,10 +1,22 @@
 /* CSS file for footer */
 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 10px 0 10px;
-  padding-top: 10px;
+  padding: 10px 0;
   border-top: 1px solid var(--accent-beige);
+}
+
+.footer a {
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.footer p {
+  padding-right: 10px;
 }
